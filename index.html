@@ -275,11 +275,11 @@
         // ランクを計算する関数
         function calculateRank(attempts) {
             // 8ペアの場合のランク基準に調整
-            if (attempts <= 10) { // 8ペア + 2回まで
+            if (attempts <= 12) { // 8ペア + 4回まで
                 return "S";
-            } else if (attempts <= 14) { // 8ペア + 6回まで
+            } else if (attempts <= 18) { // 8ペア + 10回まで
                 return "A";
-            } else if (attempts <= 22) { // 8ペア + 14回まで
+            } else if (attempts <= 24) { // 8ペア + 16回まで
                 return "B";
             } else {
                 return "C";
